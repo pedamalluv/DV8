@@ -5,7 +5,7 @@
         height: calc(100vh - $headerHeight - $footerHeight);
         overflow: auto;
         margin-top: $headerHeight;
-        margin-left: $menuDefaultWidth;
+        margin-left: 0; // $menuDefaultWidth;
         padding: $containerYPadding $containerXPadding;
         background-color: $containerBGColor;
     }

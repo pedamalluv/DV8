@@ -53,15 +53,23 @@
         }
         select {
             //border-left: 1px solid #ced4da;
-            background: transparent;
+            // background: transparent;
         }
         input {
             width: 375px;
-            background: transparent;
+            // background: transparent;
         }
-        box-shadow: 0 2px 8px #DBDEF1;
-        margin: 0 15px 30px 15px;
+        // box-shadow: 0 2px 8px #DBDEF1;
+        margin: 0 15px 30px 0;
         padding: 20px;
         border-radius: 0.5rem;
     }
+}
+
+.bg-panel {
+    background-image: url(../../../assets/images/search-panel-bg.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -30px -40px;
+    padding-top: 20px;
 }

@@ -1,0 +1,54 @@
+@import "../../styles/helpers/variables";
+.app-side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: $menuBGColor;
+    width: $menuDefaultWidth;
+    transition: all 0.3s ease-in-out;
+    .hamberger-menu-block {
+        height: 72px;
+        width: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // cursor: pointer;
+        span {
+            padding: 10px;
+            i {
+                font-size: 1.5rem;
+                color: #5a5d6f;
+            }
+        }
+    }
+    .menu-list {
+        margin-top: 32px;
+        list-style: none;
+        display: block;
+        .list-item {
+            display: flex;
+            flex-direction: row;
+            padding: 4px;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            .icon-block {
+                width: 64px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    font-size: 1.25rem;
+                    color: #5a5d6f;
+                }
+            }
+            &.active {
+                .icon-block {
+                    background-color: #f2f2ff;
+                }
+            }
+        }
+    }
+}

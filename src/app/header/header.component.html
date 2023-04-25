@@ -1,0 +1,17 @@
+<div class="app-header" [ngClass]="{'squeeze-in': true}">
+    <div class="brand-info">Verizon</div>
+    <div class="header-content">
+        <i class="pi pi-bell mx-3" pBadge value="2" severity="danger"></i>
+        <i class="pi pi-phone mx-3 border-left mr-4"></i>
+        <span class="d-flex align-items-center" (click)="op.toggle($event)">
+            <p-avatar icon="pi pi-user" styleClass="mr-2" [style]="{'height': '40px', 'width': '40px', 'background': '#E6EBFA'}" size="large" shape="circle"></p-avatar>
+            Hello John !
+            <i class="pi pi-angle-down ml-3 font-light"></i>
+        </span>
+        <p-overlayPanel #op>
+            <ng-template pTemplate="content">
+                <h4>Logout</h4>
+            </ng-template>
+        </p-overlayPanel>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+$theadBGColor: #E8E8F0;
+$tbodyBGColor: #ffffff;
+table {
+    width: 100%;
+    thead {
+        tr {
+            th {
+                background-color: $theadBGColor !important;
+                font-weight: 700;
+                font-size: 0.75rem;
+                line-height: 18px;
+                vertical-align: middle;
+                color: #2D3C55;
+                text-transform: capitalize;
+                height: 2rem;
+                padding: 10px 20px;
+                &:first-child {
+                    border-top-left-radius: 0.5rem;
+                }
+                &:last-child {
+                    border-top-right-radius: 0.5rem;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            &:hover {
+                td {
+                    color: $primary;
+                    background-color: #F0F0FB !important;
+                    transition: background-color 0.3ms ease-in-out;
+                }
+            }
+            td {
+                transition: background-color 0.3ms ease-in-out;
+                font-size: 14px;
+                line-height: 18px;
+                height: 56px;
+                padding: 15px 20px;
+                vertical-align: middle;
+                background-color: $tbodyBGColor !important;
+                border-bottom: 1px solid #EBEDF0;
+                border-radius: 0.25rem;
+            }
+            &:last-child {
+                td {
+                    &:first-child {
+                        border-bottom-left-radius: 0.5rem !important;
+                    }
+                    &:last-child {
+                        border-bottom-right-radius: 0.5rem !important;
+                    }
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+// paginator styles override 
+.p-paginator {
+    background-color: transparent !important;
+    .p-paginator-first,
+    .p-paginator-prev,
+    .p-paginator-next,
+    .p-paginator-last {
+        border: none;
+        background-color: transparent;
+    }
+    .p-paginator-pages {
+        .p-paginator-page {
+            background-color: transparent;
+            color: $secondary;
+            border-radius: 50%;
+            margin: 0 0.25rem;
+            &.p-highlight {
+                background-color: $primary;
+                border-color: $primary;
+            }
+        }
+    }
+}

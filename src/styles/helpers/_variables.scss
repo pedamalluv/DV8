@@ -1,0 +1,24 @@
+// header section
+$headerBGColor: #FAFAFF;
+$headerHeight: 72px;
+//side menu 
+$menuBGColor: #ffffff;
+$menuDefaultWidth: 72px;
+$menuExpandedWidth: 300px;
+//container
+$containerBGColor: $headerBGColor;
+$containerYPadding: 32px;
+$containerXPadding: 40px;
+//footer 
+$footerBGColor: $headerBGColor;
+$footerHeight: 50px;
+//overriding variables
+$primary: #6666CC;
+$primaryColor: $primary;
+$secondary: #444672;
+$secondaryColor: $secondary;
+:root {
+    --primary-color: #6666CC !important;
+}
+
+$white: #ffffff;

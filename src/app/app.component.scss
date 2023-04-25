@@ -1,0 +1,12 @@
+@import "../styles/helpers/variables";
+.app-container {
+    .content-area {
+        display: flex;
+        height: calc(100vh - $headerHeight - $footerHeight);
+        overflow: auto;
+        margin-top: $headerHeight;
+        margin-left: $menuDefaultWidth;
+        padding: $containerYPadding $containerXPadding;
+        background-color: $containerBGColor;
+    }
+}

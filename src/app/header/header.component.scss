@@ -1,0 +1,47 @@
+@import "../../styles/helpers/variables";
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $headerHeight;
+    background-color: $headerBGColor;
+    box-shadow: 0 2px 8px #DBDEF1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px 0 40px;
+    transition: all 0.3s ease-in-out;
+    &.squeeze-in {
+        left: 72px;
+        transition: all 0.3s ease-in-out;
+    }
+    .brand-info {
+        background-image: url('../../assets/images/Verizon-logo.svg');
+        background-repeat: no-repeat;
+        height: 36px;
+        width: 136px;
+        content: '';
+        display: flex;
+        text-indent: -9999px;
+    }
+    .header-content {
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 1.5rem;
+            &.border-left {
+                border-left: 1px solid #dfe3ed;
+                padding-left: 1.5rem;
+            }
+        }
+        .avatar-profile {
+            height: 40px;
+            width: 40px;
+        }
+        .font-light {
+            color: #aaa;
+        }
+    }
+}

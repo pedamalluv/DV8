@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+// including bootstrap styles
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// including prime-ng styles
+@import "primeng/resources/primeng.css"; // for defautl prime-ng styles
+@import "primeng/resources/themes/bootstrap4-light-blue/theme.css"; // theme
+@import "primeicons/primeicons.css"; // for prim-ng icons
+//importing fonts
+@import '../../node_modules/open-sans-fonts/open-sans.scss';
+// helpers
+@import "./helpers/normalize";
+@import "./helpers/reset";
+@import "./helpers/variables"; // for all the custom variables 
+// components
+@import "./components/table";
+@import "./components/button";
+@import "./layout"; // for all the layout related styles 
+@import "./commons"; // for all the commons

@@ -1,0 +1,67 @@
+@import "../../../styles/helpers/variables";
+.app-audit-landing {
+    .table-help-text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        color: $secondary;
+        line-height: 20px;
+        opacity: 0.7;
+    }
+    .status {
+        border: 1px solid;
+        padding: 0.25rem 1rem;
+        border-radius: 1rem;
+        text-transform: capitalize;
+        &.enabled {
+            border-color: #669900;
+            background-color: #e0f5b8;
+            color: #669900;
+        }
+        &.disabled {
+            border-color: #F23F67;
+            background-color: #FAE6F0;
+            color: #F23F67;
+        }
+    }
+    .pi-file-edit {
+        color: lighten($color: $primary, $amount: 10%);
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+        &:hover {
+            transition: color 0.2s ease-in-out;
+            color: $primary;
+        }
+    }
+    .search-panel {
+        .small-text {
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+            padding-left: 12px;
+            color: #999;
+        }
+        input,
+        select,
+        .btn {
+            border-radius: 0;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            height: 38px;
+            outline: none;
+            box-shadow: none;
+        }
+        select {
+            //border-left: 1px solid #ced4da;
+            background: transparent;
+        }
+        input {
+            width: 375px;
+            background: transparent;
+        }
+        box-shadow: 0 2px 8px #DBDEF1;
+        margin: 0 15px 30px 15px;
+        padding: 20px;
+        border-radius: 0.5rem;
+    }
+}

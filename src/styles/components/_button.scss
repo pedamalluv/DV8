@@ -1,0 +1,7 @@
+@import "../../styles/helpers/variables";
+.btn {
+    &.btn-primary {
+        background-color: $primary;
+        border-color: $primary;
+    }
+}
